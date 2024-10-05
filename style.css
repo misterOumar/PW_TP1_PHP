@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./background.jpg") no-repeat center/cover;
+}
+
+.wrapper {
+  width: 750px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 40px 35px 55px;
+  margin: 0 10px;
+}
+
+.wrapper .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background: #072F16; */
+}
+
+.input-box .input-field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 13px 0;
+}
+
+.input-box .input-field input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 15px 15px 15px 40px;
+}
+
+.input-box .input-field input::placeholder {
+  color: #fff;
+}
+
+.input-box .input-field i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.error-box {
+  background-color: #e21b5a;
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+
+.wrapper i#error-icon {
+  color: #e21b5a;
+  font-size: 10rem;
+  transition: color 0.3s ease;
+  transform: opacity(1);
+  transform: scale(1);
+  animation: error-icon-anim 1.6s ease forwards infinite;
+  text-align: center;
+  display: block;
+}
+
+@keyframes error-icon-anim {
+  0% {
+    transform: opacity(0);
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+    transform: opacity(0.5);
+  }
+
+  100% {
+    transform: opacity(1);
+  }
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+table td,
+tr {
+  border: 1px solid;
+  padding: 0.4rem;
+}

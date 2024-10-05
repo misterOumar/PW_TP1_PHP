@@ -1,0 +1,1 @@
+[{"name":"Coulibaly Oumar","email":"oumar@gmail.com","password":"$2y$10$Jeu1EtlJ0b3ye2HYpNylneGRp0UvhbSU\/uGvpQuc4db20razaWVBq"},{"name":"Coulibaly","email":"coulibaly@gmail.com","password":"$2y$10$Hg4pdnePMgWaE9ZebOyOFuBsniyk7MYGPlg2BUewlj0c0WTH1B6aq"}]

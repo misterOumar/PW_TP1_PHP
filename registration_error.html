@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP1 PHP</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    a.btn {
+      color: #000000;
+      width: 100%;
+      display: block;
+      padding: 1rem 2rem;
+      font-family: "Courier New", Courier, monospace;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 2rem;
+    }
+  
+  </style>
+  <body>
+    <div class="wrapper">
+      <i class="bx bx-error-circle" id="error-icon"></i>
+      
+      <h1>Oups ! une  erreur est survenue lors de votre inscription</h1>
+
+
+      <div class="error-box">
+        <p class="error-message">Veuillez vérifier les informations fournies et réessayer.</p>
+    </div>
+    <a href="./register.html" class="btn">Retour à la page d'inscription</a>
+    </div>
+
+        <script>
+      function getParamValue(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(location.href);
+    if (results == null)
+        return "";
+    else
+        return decodeURI(results[1]);
+}
+
+let  error = getParamValue("error");
+let error_message = document.querySelector('.error-message');
+error_message.innerHTML = error;
+
+    </script>
+  </body>
+</html>

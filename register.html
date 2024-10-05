@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - TP1 PHP</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="./register.php" method="POST" autocomplete="off">
+        <h1>Inscription</h1>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" id="name" name="name" placeholder="Nom" />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="text" id="email" name="email" placeholder="Email" />
+            <i class="bx bxs-envelope"></i>
+          </div>
+
+          <div class="input-field">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Mot de passe"
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+        </div>
+
+        <button type="submit" class="btn" name="bt_register" id="bt_register">
+          S'inscrire
+        </button>
+        <small style="text-align: right; display: block; margin-top: 10px">
+          Vous avez un compte ?
+          <a href="./login.php">Connectez-vous ici</a></small
+        >
+      </form>
+    </div>
+
+
+  </body>
+</html>
